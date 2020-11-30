@@ -134,7 +134,14 @@ git 删除全局配置
     (Windows) C:\Users\Administrator\.ssh\id_rsa.pub"
 
 ============================================================================================
-在使用 idea 开发过程中在终端 git pull 和 git push 时每次提交都需要输入用户名和密码解决方案:
-打开 git 终端或 idea 插件终端输入命令：" git config --global credential.helper store "
+3. 在使用 idea 开发过程中在终端 git pull 和 git push 时每次提交都需要输入用户名和密码解决方案:
+      打开 git 终端或 idea 插件终端输入命令：" git config --global credential.helper store "
+
+4. 查看及重新设置用户名
+    # 查看用户名
+        $ git config user.name
+        chw683
+    # 重新设置用户名
+        $ git config --global user.name "chw683"
 
 ./target/release/bifrost --chain bifrost-dev --ws-port 9968 --unsafe-ws-external --tmp --rpc-cors 'all'
