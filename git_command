@@ -1,0 +1,138 @@
+
+
+
+==========================================================================
+Administrator@CHW MINGW64 /e/project/substrate/courseware (master)
+$ git remote -v
+origin  https://github.com/SubstrateCourse/slides.git (fetch)
+origin  https://github.com/SubstrateCourse/slides.git (push)
+
+# 拉取最新代码
+$ git pull origin master
+
+==========================================================================
+推送本地新建的项目
+# 在远程库中创建一个同名的 repository
+
+# 项目根目录初始化本地分支
+git init
+
+#加入修改并提交
+git add .
+git commit -m "initial"
+
+#添加远程分支
+git remote add origin url_to_remote_git_repository
+$ git remote add origin https://github.com/chw683/tcp_client.git
+
+# (未配置用户名及密码)首次需配置个人信息
+$ git config --global user.email "326756656@qq.com"
+$ git config --global user.name "chw683"
+# 配置 ssh-key
+
+# 提交
+$ git push -u origin master
+
+# 查看远程仓库
+git remote -v
+
+git remote add origin https://github.com/chw683/command_line.git
+# 链接远程
+$ git remote add origin https://github.com/bifrost-finance/bifrost-xt.git
+
+用户名：
+    chw683
+密码：
+    Fc68
+
+    git checkout jamie-dev
+    git clone -b jamie-dev https://github.com/chw683/bifrost.git
+
+远程编译：
+    cargo remote -e /home/bifrost/.profile -- build --release
+远程检查：
+    cargo remote -e /home/bifrost/.profile -- check --tests
+
+=================================================================================
+拉取指定分支(或拉取默认 master 分支后使用 git checkout branch_name 切换到指定分支)
+    git clone -b jamie-dev  https://github.com/bifrost-finance/bifrost.git
+
+切换至自己分支修改并加入缓存
+    git checkout chw
+
+提交到远程分支
+    git push origin chw
+
+点击链接(提交成功会生成相应链接)或到远程提 Pull Request
+
+=================================================================================
+提交失败：
+    chw@chwdeMacBook-Pro bifrost % git push origin chw
+        To https://github.com/bifrost-finance/bifrost.git
+         ! [rejected]        chw -> chw (non-fast-forward)
+        error: failed to push some refs to 'https://github.com/bifrost-finance/bifrost.git'
+        hint: Updates were rejected because the tip of your current branch is behind
+        hint: its remote counterpart. Integrate the remote changes (e.g.
+        hint: 'git pull ...') before pushing again.
+        hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+解决方案(强制更新)：
+    chw@chwdeMacBook-Pro bifrost % git push --force-with-lease origin chw:chw
+
+=====================================================================================
+./target/release/substrate benchmark \
+--chain dev \
+--execution=wasm \
+--wasm-execution=compiled \
+--pallet pallet_balances \
+ --extrinsic transfer \
+--steps 50 \
+--repeat 20 \
+--output ./generate_file.rs
+
+# 查询
+./target/release/substrate benchmark --chain dev --pallet "*" --extrinsic "*" --repeat 0
+
+===========================================================================================
+git 删除全局配置
+    a. 查看Git所有配置
+        git config --list
+    b. 删除全局配置项
+          方式1：终端执行命令
+             : user.name
+          方式2：编辑配置文件：
+              git config --global --edit
+
+查看修改的文件
+    双击项目 -> Git -> Commit Directory...
+
+============================================================================================
+删除远程分支：
+    a. 查看所有分支
+        git branch -a       // 上方是本地分支 / 下方是远程分支(以 remotes/origin 开头）
+    b. 切换至其它分支如 master
+        git checkout master
+    c. 删除远程分支
+       git push origin --delete remote_branch_name
+    d. 删除本地分支
+       git branch -d local_branch_name
+       git branch -D local_branch_name      // " -D "为强制删除
+============================================================================================
+提交到远程分支
+    git push origin chw
+
+===========================================================================================
+0. ssh 配置（需要使用 root 权限）
+
+1. 创建ssh客户端的密钥
+    chw@chwdeMacBook-Pro ~ % sudo ssh-keygen
+        然后根据提示，一路选择对应的路径，选择默认配置就行，
+        直接敲回车选择默认配置。一直到出现下面的乱码一样的内容，表示配置成功
+
+2. 查看公钥
+    chw@chwdeMacBook-Pro ~ % cat /Users/chw/.ssh/id_rsa.pub
+    (Windows) C:\Users\Administrator\.ssh\id_rsa.pub"
+
+============================================================================================
+
+./target/release/bifrost --chain bifrost-dev --ws-port 9968 --unsafe-ws-external --tmp --rpc-cors 'all'

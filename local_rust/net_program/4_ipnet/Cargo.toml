@@ -1,0 +1,8 @@
+[package]
+name = "use_ipnet"
+version = "0.1.0"
+authors = ["anonymousGiga <cryptonymGong@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ipnet = "2.3.0"

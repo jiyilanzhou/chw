@@ -1,0 +1,11 @@
+[package]
+name = "use_build1"
+version = "0.1.0"
+authors = ["anonymousGiga <cryptonymGong@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+[build-dependencies]
+cc = "1.0"
+
+[dependencies]

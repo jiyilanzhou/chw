@@ -1,0 +1,137 @@
+										time
+==============================================================================================
+
+github : chw683 * Fc68	/ https://gitee.com/  : chw683 * rl68
+程序员在囧途 : golang * c3		leetcode: chw683*gl68
+// 程序员在囧途：zhuxingyi * zhu584520
+
+账户密码 A190606818 * c3		164539156	
+Oracle/RedHat/Jetbrains： 326756656@qq.com  *  Cfc    
+希赛：18385635843 * cfc / Postman ： 326756656@qq.com  *  chw * rl   
+传智播客播放密码:"16418-2C80-7FE7-2E90-E3E4"
+阿里云: golang68 * c3	爱奇艺：18310681603 * fc68
+
+爱课程：http://www.icourses.cn/imooc/   手机号登录" 18310080486 * Architect@68.com "
+bili : 326756656@qq.com * c3    /// 51cto : 18310080486 * rl
+QQ : fc68/95  // https://nodelover.me/login   326756656@qq.com * rl
+https://dashboard.daocloud.io/build-flows : chw683/326756656@qq.com * fc53
+PTA: https://pintia.cn              326756656@qq.com * rl
+http://abook.hep.com.cn/1858125		chw683 * rl
+Apple ID ： 326756656@qq.com * Fc68
+
+Bifrost 钱包: 用户名/密码" c * 3 "
+		地址：" cNprS4BEWJV5CbY1U79yNffrEiPHDFZFfZuYUt4MzZKtFPc "
+腾讯会议/录音啦：18301608683 * Fc68				
+极客时间: 18301608683 * 验证码
+google : 	fengchen638@gmail.com * Fc@68
+riot:	    https://riot.w3f.tech * chw * Fc68
+element:    https://app.element.io * chw683 * Fc68
+		
+==============================================================================================
+五笔编码：/编写代码风格:先搭建框架再编写细节(先整体后局部[边写边测])
+救 giyt    必 nte    舟 tui    殷 rvnc    我 trny     爪 rhyi
+鸟 qgd     乌 tnng   拜 rdfh   夹 gudi	  尧 atgq	  心 nyny
+遭 gmap    兜 rqnq   貌 erqn   寡 pdev    己 nngn	  羊 uyth
+
+// 五笔翻页使用" + / - "符号
+// 未收录" 洩(ijnt) "字 -> 故暂且添加"洩流"词汇 (如何添加单字[?])	
+==============================================================================================
+
+《般若波罗蜜多心经》
+观自在菩萨，行深般若波罗蜜多时，照见五蕴皆空，度一切苦厄。 
+舍利子，色不异空，空不异色，色即是空，空即是色，受想行识，亦复如是。 
+舍利子，是诸法空相，不生不灭，不垢不净，不增不减。 
+是故空中无色，无受想行识，无眼耳鼻舌身意，无色声香味触法，无眼界，乃至无意识界，
+无无明，亦无无明尽，乃至无老死，亦无老死尽。无苦集灭道，无智亦无得。以无所得故。
+ 
+菩提萨埵，依般若波罗蜜多故，心无挂碍。无挂碍故，无有恐怖，远离颠倒梦想，究竟涅盘。 
+三世诸佛，依般若波罗蜜多故，得阿耨多罗三藐三菩提。 
+故知般若波罗蜜多，是大神咒，是大明咒，是无上咒，是无等等咒，能除一切苦，真实不虚。 
+故说般若波罗蜜多咒，即说咒曰：揭谛揭谛，波罗揭谛，波罗僧揭谛，菩提萨婆诃。
+
+==============================================================================================
+
+数据卷/数据卷容器/绝世天劫/国际化语权/ 愿意去 /高内聚/软删除/类选择器/层级选择器/所有权
+创意园区/运算器/音乐聚会/网易云音乐/百度桃花运联姻园/自动推导类型/寄存器/安全内存管理层
+内存安全/语句
+上海银行卡号：6231 8500 8044 6291 28   | 
+招商：6214 8301 5290 7738
+taskkill /f /pid  3368			// CSP：(Communicating Sequential Processes:通信顺序进行)
+
+==============================================================================================
+2020年10月中国编程语言排行榜	  // neoVim 编辑器   // Rust 鲁棒性 即程序的健壮性
+	rust、haskell、DeepSAE 	  // 码市 开源众包 程序员客栈
+动漫：雾山五行、元龙、天宝伏妖录	
+==============================================================================================
+
+进入 mysql 设置时区：mysql> set global time_zone = '+8:00';  // 注意不要漏掉后面的分号	
+Windows + R -> control : 打开控制面板
+shutdown -s -t 3600		// 一妙山人2017《天中六甲法术奇门高级面授班》讲义+录音
+						// 心启 / 心阳 / 心悦(入师门最早) / 心香   
+
+都会使你的回答非常具有条理性
+叫 stant 法则
+据说是世界五百强企业面试的常用规则
+start昵s
+situation
+就是你面对的一个什么样的困难和情境
+t 即是 task
+在这个情境当中你的任务是什么
+有什么分工
+你需要做什么
+a action就是为了你这个任务
+你实行的具体的一些行动是什么
+R result
+就是你在完成这个项目之后
+有什么结果
+t think
+就是你做完整个项目之后的一个反思
+
+互联网三高：高可用(高并发)、高扩展、高性能  / 副业(自媒体公众号)
+B站：into rust / 用Rust从零编写操作系统 / Rust让你从入门到 / Substrate 快速入门与开发实战
+==============================================================================================
+C	// B站搜索" golang 源码 / Go 夜读 "	//问题：注解路由(不绑定结构体如何指定对应的函数)
+G	// 百度搜索"雄安 区块链 租房网"  // 任务调度 // 结点中的 peer 如何理解(百度)
+	project:hyperledger fabric + micro + gin + kubernets[kubə'netis](华为云平台申请区块链) 
+R	// Substrate 区块链框架(Polkadot[基于Substrate]) / 区块链 Cita / Nervos(公链) // IPFS 
+	   TiDB (TiKV 作为 TiDB 的存储层)   
+	   
+Rust_Project:
+	Bitcoin : https://github.com/rust-bitcoin/rust-bitcoin
+	
+CLion 代码自动同步：
+	似乎需更新版本才能实现" https://www.cnblogs.com/qiumingcheng/p/11185073.html "
+
+CLion 远程调试
+	a. CentOS 依赖
+	    # cmake
+		yum install cmake -y
+		# gcc & gdb
+		yum install gcc-c++ -y
+		yum install gdb -y
+		# gdbserver
+		yum install gdb-gdbserver -y
+	b. 工具栏 -> Edit Configurations ...
+          	  -> Add New Configuration -> GDB Remote Debug
+	c. 在" project / hello "项目下编写 CMakeLists.txt
+		cmake_minimum_required(VERSION 2.8)
+		project(RProject)
+		set(CMAKE_CXX_STANDARD 11)
+		add_executable(project src/main.rs)
+	d. 执行 cmake 相应命令
+		$ cd /project/hello					// 远程目录							
+		$ mkdir build
+		$ cd build
+		$ cmake .. -DCMAKE_BUILD_TYPE=Debug
+		$ make			
+==============================================================================================
+					       Time
+ 0:00 ~  0:38  C	 		 		   				 M
+ 7:53 ~  8:53  R	                   8:58 ~ 9:28   W
+ 9:38 ~ 10:08 	   10:13 ~ 12:13  	  14:30 ~ 18:00
+19:00 ~ 20:00  S			          20:08 ~ 20:38  V
+	
+" 网络编程(线程池)、并发编程(资源访问)、异步编程(单线程模拟单核多线程并发) "/ Rust 死灵书	
+==============================================================================================
+Setting -> Editor -> General -> Editor Tabs -> (取消勾选)Show tabs in one row
+

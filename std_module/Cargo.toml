@@ -1,0 +1,8 @@
+[package]
+name = "std_module"
+version = "0.1.0"
+authors = ["Administrator"]
+edition = "2018"
+
+
+[dependencies]

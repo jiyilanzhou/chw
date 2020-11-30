@@ -1,0 +1,7 @@
+[package]
+name = "macro_feature"
+version = "0.1.0"
+authors = ["Administrator"]
+edition = "2018"
+
+[dependencies]

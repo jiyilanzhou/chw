@@ -1,0 +1,12 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["chw683 <326756656@qq.com>"]
+edition = "2018"
+
+# 引用本地路径中的库
+[dependencies]
+good_bye = { path = "../good_bye" }
+# 引用官方库
+#[dependencies]
+#lazy_static = "1.0.0"

@@ -1,0 +1,12 @@
+[package]
+name = "core"
+version = "0.1.0"
+authors = ["Administrator"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+# 通常将非第三方依赖包置于第三方依赖包前
+util = {path = "../util"}
+# 因 BlockHeader 需使用到" derive[Serialize,Deserialize] "
+serde = { version = "1.0.106", features = ["derive"] }

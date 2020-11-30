@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "main",
+    "core", # 区块链相关逻辑
+    "util"  # 获取哈希、序列化与反序列化等工作
+]

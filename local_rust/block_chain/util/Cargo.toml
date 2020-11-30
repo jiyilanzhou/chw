@@ -1,0 +1,13 @@
+[package]
+name = "util"
+version = "0.1.0"
+authors = ["Administrator"]
+edition = "2018"
+
+[dependencies]
+# serde = "1.0.106"
+# 因测试中需使用到" derive[Serialize,Deserialize] "
+serde = { version = "1.0.106", features = ["derive"] }
+bincode = "1.2.1"
+# 求哈希需要用到的库依赖
+rust-crypto = "0.2.36"

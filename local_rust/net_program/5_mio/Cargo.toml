@@ -1,0 +1,9 @@
+[package]
+name = "use_mio"
+version = "0.1.0"
+authors = ["anonymousGiga <cryptonymGong@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+mio = {version = "0.7.0", features = ["os-poll", "tcp"]}
+

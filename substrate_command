@@ -1,0 +1,25 @@
+
+
+
+===========================================================================
+交互工具
+    官方 apps : "https://polkadot-js.org/apps "
+
+    安装本地 apps : " https://github.com/polkadot-js/apps#development "
+
+===========================================================================
+
+# 删除已存在的数据库
+./target/release/substrate purge-chain --dev
+
+#启动开发者模式(单结点)
+./target/release/substrate --dev
+
+# 查看帮助
+./target/release/substrate -h
+
+
+
+
+
+

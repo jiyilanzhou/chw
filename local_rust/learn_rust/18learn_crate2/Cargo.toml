@@ -1,0 +1,8 @@
+[package]
+name = "learn_crate2"
+version = "0.1.0"
+authors = ["andy"]
+edition = "2018"
+
+[dependencies]
+mylib = {path = "./mylib"}

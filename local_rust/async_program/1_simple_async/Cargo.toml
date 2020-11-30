@@ -1,0 +1,9 @@
+[package]
+name = "simple_async"
+version = "0.1.0"
+authors = ["anonymousGiga <cryptonymGong@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.3.4"
+async-std = "1.6.0"

@@ -1,0 +1,231 @@
+
+
+
+=======================================================================================
+JetBrains IDE 与远程互联
+	a. Settings -> Build、Execution、Deployment -> Deployment -> 点选加号" + "图标
+	   ->在其下拉列表中选择传输协议(如SFTP)->自定义服务名 -> 在" Connection "标签下
+       配置主机 Host 、Username_Password、Root path(同步目录[以"Mappings"标签下配置
+	   的"Deployment path"为基础])
+	b. 菜单栏 Tools -> Deployment -> Automatic Upload (实时自动加载更新)
+	c. 在项目上右击 ->  Deployment ->Download from ...
+
+CLion 代码自动同步：
+	似乎需更新版本才能实现" https://www.cnblogs.com/qiumingcheng/p/11185073.html "
+
+
+Notepad++ 与远程互联
+   (菜单栏)插件 -> NppFTP -> Show NppFTP Window -> 在弹出的左侧栏窗口点选"设置"("
+	      齿轮图标") -> 配置" Hostname、Port、Username、Password "
+=======================================================================================
+                        Linux 常用操作命令
+0. 重启网卡
+    a. CentOS :
+            [root@localhost ~]# ifup ens33
+    b. Ubuntu ：
+            root@ubuntu:~# service network-manager restart
+
+1. 使用 git 拉取(推荐使用)
+    a. 创建目录->进入目录->" git init "
+    b. 首次拉取使用" git clone https://github.com/SubstrateCourse/slides.git "
+    c. 关联" git remote add origin  https://github.com/SubstrateCourse/slides.git "
+    d. 查看关联" git remote -v "
+        $ git remote -v
+          origin  https://github.com/SubstrateCourse/slides.git (fetch)
+          origin  https://github.com/SubstrateCou
+          rse/slides.git (push)
+    e. 再次拉取使用" git pull "
+       $ git pull origin master
+======================================================================================
+                     取消国内中科大源配置(使用官方源)
+0. 删除环境变量
+    RUSTUP_DIST_SERVER = https://mirrors.ustc.edu.cn/rust-static
+    RUSTUP_UPDATE_ROOT = https://mirrors.ustc.edu.cn/rust-static/rustup
+1. 注释" .cargo/config "内" #replace-with = 'ustc' "即：
+    [source.crates-io]
+    registry = "https://github.com/rust-lang/crates.io-index"
+    #replace-with = 'ustc'
+    [source.ustc]
+    registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+2. 使配置的镜像源生效(类比" source/etc/profile ")
+======================================================================================
+            关于 DEBUG 调试及 Rust 的 cc 依赖
+1. DEBUG 调试
+   需要配置 MinGW 方能在控制台打印
+   即" Setting -> Build,Execution,Deployment->Toolchains "配置 MinGW (不可配置 WinBuilds)
+   若配置 WinBuilds 则 DEBUG 调试时其弹出黑窗口并打印输出
+2. 关于 Rust 的 cc 依赖
+   需要配置在环境变量中配置 WinBuilds 方能在 Windows 执行
+3. 故" DEBUG 调试"及" Rust 编译 cc 依赖"两者并无冲突,分别配置环境变量及 Toolchains 即可
+=======================================================================================
+            github 项目下载慢(使用 gitee 解决)
+a. gitee.com -> new repository -> import -> 拷贝粘贴"github"项目地址-> 创建
+b. 创建成功后拉取 gitee 上的项目地址如" git clone https://gitee.com/chw683/llvm-project
+======================================================================================
+                Rust_Architect
+=======================================================================================
+rustup toolchain list      // 查看安装的工具链
+rustup default nightly     // 设置默认工具链是 nightly 版本
+rustup default stable      // 设置默认工具链是 stable 版本
+rustup --version           // rustup version
+rustup self uninstall      // 卸载 rust 所有程序
+cargo --version            // cargo version
+rustup self update         // 更新 rustup 本身
+rustup update              // 更新 工具链
+======================================================================================
+                快捷键
+Ctrl + Alt + B ：查看 trait 内方法具体类型实现
+
+========================================================================================
+【新书发售】Rust in Action 将于明年三月发行
+由 TS McNamara 所著的 Rust in Action 将于明年发售，它已冲顶亚马逊内存管理和并行计算分类新书榜第一名。
+Rust in Action MEAP V14（预览版）现已可阅读
+阅读更多：
+E-book: https://www.manning.com/books/rust-in-action?a_aid=rust&a_bid=0367c58f&chan=twitter
+
+========================================================================================
+Question:
+    E:\project\macro_feature [???]
+更改镜像源:" root@ubuntu:~# vim $HOME/.cargo/config "
+========================================================================================
+Bifrost :
+     # App 运行(具体参见" ...substrate\lesson6\homework.rs ")
+     root@ubuntu:~/project/apps# yarn start
+     # Front-End
+     root@ubuntu:~/project/substrate-front-end-template# yarn start
+
+build machine 的地址:
+    addr: ssh bifrost@10.115.27.96
+    password: bifrost
+
+远程编译：
+    cargo remote -e /home/bifrost/.profile -- build --release
+
+clippy 的使用
+    在每一个 crate 下执行" cargo clippy "并进行修改
+
+=======================================================================================
+查看分支修改信息
+    git diff chw
+
+=======================================================================================
+删除 target 文件：
+Administrator@CHW MINGW64 /e/project
+rm -rf */target
+rm -rf */*/target
+rm -rf */*/*/target
+rm -rf */*/*/*/target
+======================================================================================
+远程编译：
+    a. 拉取项目"
+    b. 进入" bifrost " 项目配置" .cargo-remote.toml "
+        root@ubuntu:~/project/bifrost# cat .cargo-remote.toml
+        remote = "bifrost@10.115.27.96"
+    c. 进入" bifrost "进行远程编译
+        cargo remote -e /home/bifrost/.profile -- build --release
+
+scp : secure copy
+    a. 从本地复制到远程(目录使用" -r ")
+        root@ubuntu:~/project/bifrost# scp ./.cargo-remote.toml bifrost@10.115.27.96:/root/
+    b. 从远程复制到本地
+        root@ubuntu:~/project/bifrost# scp -r bifrost@10.115.27.96:/home/bifrost/remote-builds/5015764390489952359/target ./
+
+比对不同文件
+    diff /Users/chw/project/bifrost/bin/node/runtime/src/lib.rs \
+         /Users/chw/project/substrate/bin/node/runtime/src/lib.rs
+
+安装对应版本的 toolchain
+    rustup target add wasm32-unknown-unknown --toolchain nightly-2020-09-08
+=========================================================================================
+Window 配置 git 免密登录：
+    a. 启动 powershell
+       # 方式1：使用默认
+            PS C:\Users\Administrator> ssh-keygen
+              // 提示输入密码一路回车使用默认即可如下
+            Generating public/private rsa key pair.
+            Enter file in which to save the key (C:\Users\Administrator/.ssh/id_rsa):
+            Created directory 'C:\Users\Administrator/.ssh'.
+            Enter passphrase (empty for no passphrase):
+            Enter same passphrase again:
+            Your identification has been saved in C:\Users\Administrator/.ssh/id_rsa.
+            Your public key has been saved in C:\Users\Administrator/.ssh/id_rsa.pub.
+            The key fingerprint is:
+            SHA256:Pg+B8jyf4HbDAYrBuVM30pEklRqROmbdyOJM4u7QXD4 administrator@CHW
+            The key's randomart image is:
+            +---[RSA 2048]----+
+            |    o=oo         |
+            |    o.+          |
+            | . = * .         |
+            |. @ B *.         |
+            |.B Bo+.oS        |
+            | +*o.+ ...       |
+            |o o.E =.+.       |
+            |..   o.++=       |
+            |..   ...o..      |
+            +----[SHA256]-----+
+       # 方式 2 ：指定邮箱
+            PS C:\Users\Administrator> ssh-keygen -t rsa -b 2048 -C "326756656@qq.com"
+            Generating public/private rsa key pair.
+            Enter file in which to save the key (C:\Users\Administrator/.ssh/id_rsa):
+            C:\Users\Administrator/.ssh/id_rsa already exists.
+            Overwrite (y/n)? y
+            Enter passphrase (empty for no passphrase):
+            Enter same passphrase again:
+            Your identification has been saved in C:\Users\Administrator/.ssh/id_rsa.
+            Your public key has been saved in C:\Users\Administrator/.ssh/id_rsa.pub.
+            The key fingerprint is:
+            SHA256:uFrzSH3Q8i9361bli6mxfuzg41iUtjCFpoZ8iXng0r0 326756656@qq.com
+            The key's randomart image is:
+            +---[RSA 2048]----+
+            |                 |
+            |          .      |
+            |     .   o .     |
+            |    + *.+.. .   .|
+            |   . B.BSo.+   ..|
+            |    . +o.+= .   o|
+            |      =E. o=. o..|
+            |     + + .=o==o. |
+            |    . . ..oO*=o. |
+            +----[SHA256]-----+
+
+    b. 查看生成的 ssh 公钥(位于"C:\Users\Administrator\.ssh\id_rsa.pub")并拷贝
+        PS C:\Users\Administrator> cat .\.ssh\id_rsa.pub
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDC0efRnaTfBZf/IyRQ6YVgn55cPcDnPTfbdX4fnRN+SSey+FEVMvqQpGjxmXBbYnDCehJZ4AdgUq+ysEMuACqTF6Kl5K0szsQdbJfTiha7eIa/PqgrtZzvsMPSFf3n4Wi0cp5c/MduFwKutjNVu8VZGMr7Bip+rJLR5/7m3B7hz+824HXWRf0vnFkeI3begO+fAzwrTFwtnu1GPtEurDy/PPhR8lmxFnKtk3F9kmx89CT4/dJIl5aUVcpRpU+XBAikcPLQxJDsRJHEwL6rIMnghUd41SXu6upsc6Bi63M1YFCBVvLDmxCkqkm7ncmSe9ecSJwSjgqmV7XO0PT0X2KT administrator@CHW
+
+    c. github 上配置 ssh (图"chw\Git_SSH_Keys.png")
+        Users -> Settings -> SSH and GPG Keys -> SSH keys -> New SSH Key -> 粘贴拷贝的公钥即可
+
+    d. 测试连接(亦可愈" -vT "查看详情)
+        $ ssh -T git@github.com
+        The authenticity of host 'github.com (52.74.223.119)' can't be established.
+        RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+        Are you sure you want to continue connecting (yes/no/[fingerprint])? yes    // 键入 yes
+        Warning: Permanently added 'github.com,52.74.223.119' (RSA) to the list of known hosts.
+        Hi chw683! You've successfully authenticated, but GitHub does not provide shell access.
+
+===============================================================================================
+
+正则匹配：
+   全局搜索:  git push .* chw
+
+===============================================================================================
+编译版本问题
+    rustup toolchain install nightly-2020-09-08
+    rustup target add wasm32-unknown-unknown --toolchain nightly-2020-09-08
+    rustup toolchain list
+    rustup target list --toolchain nightly-2020-09-08
+
+==============================================================================================
+Clion 设置Tab、Indent size :
+    Editor -> General -> Appearance -> Show Whitespaces
+    Settings -> Editor -> Code Style -> Rust -> Tabs and Indents
+
+
+针对 Rust ：
+    即对于没有直接列出，可以选择 Ohers File Types，将 Use tab character 和 Smart tabs 前的 checkebox 设为不勾选
+==============================================================================================
+查看磁盘占用情况：
+    在相应目录下执行" du --max-depth=1 -h "
+
+
+

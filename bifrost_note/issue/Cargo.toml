@@ -1,0 +1,8 @@
+[package]
+name = "issue"
+version = "0.1.0"
+authors = ["chw"]
+edition = "2018"
+
+[dependencies]
+sp-arithmetic = "2.0.0"

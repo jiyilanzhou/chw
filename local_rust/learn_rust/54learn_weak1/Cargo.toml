@@ -1,0 +1,7 @@
+[package]
+name = "learn_weak1"
+version = "0.1.0"
+authors = ["anonymousGiga <cryptonymGong@gmail.com>"]
+edition = "2018"
+
+[dependencies]

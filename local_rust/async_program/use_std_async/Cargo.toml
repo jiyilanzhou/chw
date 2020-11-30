@@ -1,0 +1,8 @@
+[package]
+name = "use_std_async"
+version = "0.1.0"
+authors = ["anonymousGiga <cryptonymGong@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+async-std = "1.6.0"

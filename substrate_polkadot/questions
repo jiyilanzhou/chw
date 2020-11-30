@@ -1,0 +1,27 @@
+
+/*
+0. 迭代器相关的 trait 或结构体间的关系
+    如" Iter、IntoIterator、FromIterator、Iterator "等之间关系
+
+1. substrate 如何查看某个模块内宏展开后的代码
+    进行相应的 pallets crate 后执行 " cargo expand "即可查看
+
+2. 代码级别的 SDK 操作 substrate
+    比如使用 Go 语言实现的微服务需要调用链上数据查看个人征信
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */

@@ -1,0 +1,10 @@
+[package]
+name = "use_tftp"
+version = "0.1.0"
+authors = ["anonymousGiga <cryptonymGong@gmail.com>"]
+edition = "2018"
+
+
+
+[dependencies]
+tftp_server = "0.0.3"

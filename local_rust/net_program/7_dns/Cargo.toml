@@ -1,0 +1,13 @@
+[package]
+name = "use_dns"
+version = "0.1.0"
+authors = ["anonymousGiga <cryptonymGong@gmail.com>"]
+edition = "2018"
+
+
+
+[dependencies]
+trust-dns-resolver = "0.11.0"
+trust-dns = "0.16.0"
+
+

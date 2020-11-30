@@ -1,0 +1,9 @@
+[package]
+name = "use_lettre"
+version = "0.1.0"
+authors = ["anonymousGiga <cryptonymGong@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lettre = "0.9.3"
+lettre_email = "0.9.3"
